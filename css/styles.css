@@ -1,0 +1,153 @@
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 20%;
+    margin-top: 40px;
+    background-color:white ;
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+    .flex-container > div {flex:100%;}
+  
+  }
+  
+
+.card {
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 20px;
+}
+
+
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .hero-image {
+    background-image: url("./85327.png");
+    height: 50%;
+    width: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  }
+  footer {
+      color: white;
+  }
+
+  .rick {
+      font-size: 42px;
+      text-align: center;
+      width:100%
+
+  }
+
+
+  .card-title {
+      font-size: 35px;
+  }
+
+  .morty {
+      font-size: 25px;
+  }
+
+  .search {
+    margin-bottom: auto;
+    margin-top: 25px;
+    height: 70px;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+}
+
+.search-input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    margin-top: 5px;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear
+}
+
+.search .search-input {
+    padding: 0 10px;
+    width: 550px;
+    caret-color: #536bf6;
+    font-size: 21px;
+    font-weight: 300;
+    color: black;
+    transition: width 0.4s linear
+}
+
+.search:hover>.search-icon {
+    background: rgb(0, 180, 216);
+    color: #fff
+}
+
+.search-icon {
+    height: 50px;
+    width: 50px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(144, 224, 239);
+}
+
+a:link {
+    text-decoration: none
+}
+
+.title2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+button {
+    background-color: rgb(144, 224, 239);
+}
+
+img:hover
+{
+    border-radius:50%;
+}
+
+#card-group {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+
+    
+  }
+
+  #card-group > div {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 20%;
+    margin-top: 40px;
+    background-color:white ;
+  }

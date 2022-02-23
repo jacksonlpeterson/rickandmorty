@@ -1,0 +1,27 @@
+{
+  "name": "rickandmorty",
+  "version": "1.0.0",
+  "description": "Rick and Morty",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacksonlpeterson/rickandmorty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacksonlpeterson/rickandmorty/issues"
+  },
+  "homepage": "https://github.com/jacksonlpeterson/rickandmorty#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "lite": "^2.0.15",
+    "rickmortyapi": "^1.0.0",
+    "startbootstrap-bare": "^5.0.7"
+  }
+}
