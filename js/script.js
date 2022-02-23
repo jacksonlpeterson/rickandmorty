@@ -1,12 +1,14 @@
+
 document.getElementById("rick").addEventListener("click", function(event) {
-    event.preventDefault();
-    const value = document.getElementById("morty").value;
-    if (value === "")
-      return;
-    console.log(value);
-fetch("https://rickandmortyapi.com/api/character")
+  event.preventDefault();
+  const value = document.getElementById("morty").value;
+  if (value === "")
+    return;
+    console.log(value);   })
+    const url = `https://rickandmortyapi.com/api/character/?name=${"smith"}`;
+    fetch(url)
     .then(response=> response.json())
-    .then(data => makeCards(data.results));
+  .then(data => makeCards(data.results));
 
 function makeCards(characters){
     const cardContainer = document.querySelector("#card-group")
@@ -31,4 +33,3 @@ function makeCards(characters){
 
 
 
-})

@@ -131,7 +131,7 @@ button {
 
 img:hover
 {
-    border-radius:50%;
+    
 }
 
 #card-group {
@@ -144,6 +144,20 @@ img:hover
     
   }
 
+  @media (max-width: 800px) {
+    #card-group {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #card-group > div {
+      justify-content: center;
+    }
+  }
+
+
   #card-group > div {
     background-color: #f1f1f1;
     padding: 10px;
@@ -151,3 +165,5 @@ img:hover
     margin-top: 40px;
     background-color:white ;
   }
+
+  
