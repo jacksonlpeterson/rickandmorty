@@ -26,5 +26,8 @@
     "popper.js": "^1.16.1",
     "rickmortyapi": "^1.0.0",
     "startbootstrap-bare": "^5.0.7"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
