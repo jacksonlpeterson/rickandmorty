@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
@@ -21,30 +23,29 @@
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark w3-container w3-center w3-animate-opacity">
             <div class="container">
                 <a class="navbar-brand rick">Rick and Morty Character Tracker</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             </div>
         </nav>
         <!-- Page content-->
         <div class="hero-image">
 
-        <div class = "flex-container">
+        <div class = "flex-container w3-container w3-center w3-animate-opacity">
           <div class="card bg-dark text-white col-4-sm">
-            <img src="./images/Rick-and-Morty-Voice-Actors.webp" class="card-img" alt=>
+            <img src="./images/Rick-and-Morty-Voice-Actors.webp" class="card-img w3-hover-grayscale" alt=>
             <div class="card-img-top">
               <h5 class="card-title">The Rick and Morty Franchise has over 700+ Characters</h5>
             </div>
           </div>
           <div class="card bg-dark text-white col-4-sm">
-            <img src="./images/rick_and_morty_background_by_mmormo_ddxppe7-fullview.jpg" class="card-img" alt=>
+            <img src="./images/rick_and_morty_background_by_mmormo_ddxppe7-fullview.jpg" class="card-img w3-hover-grayscale" alt=>
             <div class="card-img-top">
               <h5 class="card-title">Making it nearly impossible to keep track of which characters are dead and alive.</h5>
             </div>
           </div>
           <div class="card bg-dark text-white col-4-sm">
-            <img src="./images/thumb-1920-909641.png" class="card-img" alt=>
+            <img src="./images/thumb-1920-909641.png" class="card-img w3-hover-grayscale" alt=>
             <div class="card-img-top">
               <h5 class="card-title">With the Rick and Morty Character Tracker you can Find and Keep Track of your Favorite Characters</h5>
             </div>
@@ -56,17 +57,18 @@
         <div class="title2">
             <p>Search for a Character Below</p>
         </div>
+       
 
-        <form class=" mx-auto" style="width: 300px;">
-            <input class = "form-control" id="rick" type="text"></input><br/>
-              <div class="d-grid gap-2 col-6 mx-auto">
-                  <input id="morty" type="submit" value="Submit" class = "btn btn-lg btn-primary"></input>
-             </div>
-        </form>
-
+        <div class="container">
+          <div class="row height d-flex justify-content-center align-items-center">
+              <div class="col-md-8">
+                  <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Search for a Character" id="rick"> <button type="button" onClick="refreshPage()" class="btn ">New Search</button> </div>
+              </div>
+          </div>
+      </div>
          <div 
             id = "card-group"
-            class = "container-fluid"
+            class = "container-fluid w3-container w3-center w3-animate-opacity"
          ></div>
 
         <div class="container">
@@ -128,6 +130,13 @@
               </div>
             </footer>
             
+            <script>
+              function refreshPage(){
+                  window.location.reload();
+              } 
+              </script>
+              
+
           </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

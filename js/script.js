@@ -1,17 +1,11 @@
-
-document.getElementById("rick").addEventListener("click", function(event) {
-  event.preventDefault();
-  const value = document.getElementById("morty").value;
-  if (value === "")
-    return;
-    console.log(value);   })
-    const url = `https://rickandmortyapi.com/api/character/?name=${"smith"}`;
+function searchRick(userinput){
+   const url = `https://rickandmortyapi.com/api/character/?name=${userinput}`; 
     fetch(url)
     .then(response=> response.json())
-  .then(data => makeCards(data.results));
-
-function makeCards(characters){
-    const cardContainer = document.querySelector("#card-group")
+    .then(data => makeCards(data.results));
+  function makeCards(characters){
+    const cardContainer = document.querySelector("#card-group");
+    FileList.innerHTML="";
     characters.forEach(character => {
        
         cardContainer.innerHTML = 
@@ -21,15 +15,23 @@ function makeCards(characters){
       <img src=${character.image} class = "card-img-top"</img>
          <div class="card-body">
             <h5 class="card-title">${character.name}</h5>
-            <h6>Status:${character.status}</h6>
-            <h6>Species:${character.species}</h6>
-            <h6>Gender:${character.gender}</h6>
-            <h6>Location:${character.location}</h6>
+            <div>Status:${character.status}</div>
+            <div>Species:${character.species}</div>
+            <div>Gender:${character.gender}</div>
         </div>   
     </div>   
       <br>`
     })
 }
+
+   }
+   window.onload = () => {
+    const searchFieldElement = document.getElementById("rick");
+    searchFieldElement.onkeyup = (event)=> {
+      searchRick(searchFieldElement.value);
+    }  
+     }
+      
 
 
 
