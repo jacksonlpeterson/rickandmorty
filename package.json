@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/jacksonlpeterson/rickandmorty#readme",
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
     "lite": "^2.0.15",
+    "popper.js": "^1.16.1",
     "rickmortyapi": "^1.0.0",
     "startbootstrap-bare": "^5.0.7"
   }

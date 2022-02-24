@@ -37,7 +37,7 @@
     margin-top: 10px;
   }
 
-  .hero-image {
+  body {
     background-image: url("./85327.png");
     height: 100%;
     width: fit-content;
@@ -132,7 +132,7 @@ button {
     
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     #card-group {
       flex-direction: column;
       align-items: center;
